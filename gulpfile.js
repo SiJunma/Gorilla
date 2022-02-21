@@ -38,12 +38,12 @@ const sass = require('gulp-sass');
 // Получаем список файлов CSS и определяем их порядок подключения
 const cssFiles = [
     './src/css/main.css',
-    './src/css/desktop.css',
+    './src/css/media.css',
 ];
 
 const scssFiles = [
     './src/scss/main.scss',
-    './src/scss/desktop.scss',
+    './src/scss/media.scss',
 ];
 
 // Получаем список файлов JS и определяем их порядок подключения
