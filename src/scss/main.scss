@@ -882,6 +882,16 @@ h6 {
     padding-top: 125px;
     padding-bottom: 115px;
 
+    .title {
+        text-align: center;
+        margin-bottom: 100px;
+        margin-top: 75px;
+
+        & + .blog-features__wrapper {
+            margin-bottom: 115px;
+        }
+    }
+
     &__bg {
         clip-path: polygon(100% 0,100% calc(100% - 35px),0 100%,0 60px);
         background: linear-gradient(180deg, #F5FAFF -3.11%, #FAFAFA 63.93%);
@@ -1340,6 +1350,69 @@ h6 {
             small {
                 color: #1263E3;
                 font-size: 14px;
+            }
+        }
+    }
+
+    &_blue {
+        padding-top: 170px;
+        padding-bottom: 320px;
+
+        .reviews {
+            &__bg {
+                background: linear-gradient(90deg, #1162E2 0%, #21BCFD 100%);
+                clip-path: polygon(100% 35px,100% calc(100% - 60px),0 100%,0 0px);
+        
+                &-dec {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+        
+                    &::after,
+                    &::before {
+                        @include svg();
+                        position: absolute;
+                    }
+        
+                    &::before {
+                        display: none;
+                    }
+        
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &__slider .splide__pagination__page.is-active, 
+            &__slider .splide__pagination__page:hover {
+                background: #001B8D;
+            }
+
+            &__slider-card::before {
+                background-image: url("data:image/svg+xml,%3Csvg width='36' height='27' viewBox='0 0 36 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.4506 27V15.9597L31.1097 0H35.9961L29.6325 14.1292L34.5756 14.4153V27H21.4506ZM0.996094 27V15.9597L10.712 0H15.5984L9.23473 14.1292L14.1211 14.4153V27H0.996094Z' fill='%23001B8D'/%3E%3C/svg%3E%0A");
+            }
+        }
+
+        .title h2 {
+            color: #FFFFFF;
+        }
+
+        & + .msg-form {
+            .msg-form__card {
+                margin-top: -75px;
+            }
+
+            .msg-form__bg {
+                background: #FFFFFF;
+
+                &-dec {
+        
+                    &::after,
+                    &::before {
+                        display: none;
+                    }
+                }
             }
         }
     }
