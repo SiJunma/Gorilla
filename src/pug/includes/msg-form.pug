@@ -1,0 +1,29 @@
+section(class=`msg-form${$msgFormClass ? ' ' + $msgFormClass : ''}`)
+  .section-bg.msg-form__bg
+    .container 
+      .msg-form__bg-dec
+
+  .container  
+    .row 
+      .col-lg-8.offset-lg-2
+        .msg-form__card 
+          h5 Lorem ipsum dolor sit amet
+          p Nec malesuada dictum malesuada sit adipiscing tempus ex. Nec mauris tempus in urna morbi dictumst. Nec sodales est. Luctus lectus in sed ex. Urna leo, ex. Molestie mattis eleifend adipiscing dapibus mauris nec amet, amet, risus vulputate quam, mauris orci, lorem ex.
+          
+          form.msg-form__form
+            .form-group 
+              .form-floating
+                input.form-control(type="text" name="name" placeholder="Your name" id="form_name")
+                label(for="form_name") Your name
+              
+              .form-floating
+                input.form-control(type="email" name="email" placeholder="Your Email" id="form_email")
+                label(for="form_email") Your Email
+
+            .form-group
+              .form-floating
+                textarea.form-control(name="message" placeholder="How can we help you?" id="form_msg")
+                label(for="form_msg") How can we help you?
+
+            .form-group
+              button(type="submit").btn.btn-round Submit

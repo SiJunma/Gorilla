@@ -1,0 +1,29 @@
+@mixin flex-list($align: 'center') {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  align-items: $align;
+}
+
+@mixin no-mb {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@mixin svg($width: auto, $height: auto) {
+  content: '';
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}

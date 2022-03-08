@@ -1,0 +1,22 @@
+section(class=`assurance${$assuranceClass ? ' ' + $assuranceClass : ''}`)
+  .section-bg.assurance__bg
+    .container 
+      .assurance__bg-dec
+      .section-bg__img.assurance__img: img(src=`${$assuranceImg}`)
+
+  .container 
+    .row 
+      .col-xl-7.col-lg-8
+        .content.assurance__content 
+          .title: h2= $assuranceTitle
+          p= $assuranceText
+
+          .assurance__list-box
+            h5 Gorilla Assurance
+
+            .assurance__checklist 
+              ul 
+                each item in $assuranceList
+                  li= item
+          
+          a.btn(href="#")  send me moer information

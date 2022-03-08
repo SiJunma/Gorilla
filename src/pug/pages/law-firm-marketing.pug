@@ -1,0 +1,74 @@
+extends ../layout/layout.pug
+
+block header
+  header.header.header_lfm
+    .section-bg.header__bg
+      .container 
+        .header__bg-dec
+
+    .container
+      .header__wrapper 
+        .header__offer  
+          h1 LAW FIRM MARKETING SERVICES FOR ATTORNEYS
+
+    .header__img-box
+      .container    
+        .header__img: img(src="img/header-img2.png" width="628" height="580")
+
+block content 
+  - let $assuranceTitle = 'Your Multifaceted SEO And Attorney Marketing Partner'
+  - let $assuranceText = 'We have been offering legal marketing services for more than the last ten years to dozens of lawyers across the country. From SEO and PPC to web design and reputation management, we offer you the most holistic marketing solutions. Our services will help establish your law firm as a leading brand online.'
+  - let $assuranceList = ['A comprehensive range of lawyer marketing services with cutting edge analytics', 'Customized PPC solutions tailored to your needs', 'Professional web design and re-design aimed to enhance the user experience', 'Advanced reputation management to increase your brand authority, website traffic, and leads']
+  - let $assuranceImg = 'img/assurance-img.png' 
+  include ../includes/assurance.pug
+
+  - let $trigger = 'Legal Marketing Services for Lawyers'
+  include ../includes/trigger.pug
+
+  section.services.services_mini
+    .section-bg.services__bg
+      .container 
+        .services__bg-dec
+
+    .container 
+      .card-box.services__card-box 
+        .card.card-box__item
+          .card__img
+            img(src="img/services-icon2.svg", alt="Statistic")
+          h6 SEO Services For Lawyers
+          p At Gorilla Webtactics, we know what it takes to stand out in an extremely competitive industry. So, we bring you the latest law firm SEO solutions that deliver timely and excellent results. We offer personalized SEO strategy for lawyers designed to cater to your marketing needs and help you secure highly targeted leads.
+
+        .card.card-box__item
+          .card__img
+            img(src="img/services-icon1.svg", alt="Design")
+          h6 Web Design For Lawyers
+          p Our law firm website design experts can help transform your website into a lead generation magnet. We will help you set up a sleek, responsive, user-friendly, and secure website in no time. Each one of our law firm web design is backed by thorough research and the application of the latest technology.
+
+        .card.card-box__item
+          .card__img
+            img(src="img/services-icon3.svg", alt="Money")
+          h6 PPC Management For Lawyers
+          p Get the best PPC for lawyers from the industry experts and attract a higher number of clients through your campaigns. We will not only design your PPC campaign but also execute and optimize them in real-time to get the most bang for every penny you spend. Our attorney advertising simply works. Experience it today!
+
+        .card.card-box__item
+          .card__img
+            img(src="img/services-icon4.svg", alt="Stars")
+          h6 Reputation Building For Lawyers
+          p Just like you are experts in the matters of law, we are the leaders in law firm reputation building. With our lawyer reputation management, you can quickly and efficiently build your legal expertise on the web. We will help you tap into customers that rely on social media, customer review, and online word-to-mouth to find legal help.
+
+    .row 
+      .col-lg-8.offset-lg-2
+        .services__card 
+          h5 Download for Free: Guide To Law Firm Marketing: Online
+
+          p Do you want to learn the intricacies of online law firm marketing for free? We bring you the ultimate guide to help you understand lawyer SEO marketing in depth. In this guide, David, founder and CEO of Gorilla Webtactics, shares ideas and tips based on his own marketing experience that will help you grow your business at lightning speed. Download it now!
+  
+  - let $faqClass = 'faq_blue'
+  - let $faqTitle = 'Common Legal Marketing Questions'
+  include ../includes/faq.pug
+
+  - let $blogFeaturesTitle = 'Law Firm Marketing Blogs'
+  include ../includes/blog-features.pug
+
+  - let $reviewsClass = 'reviews_blue'
+  include ../includes/reviews.pug

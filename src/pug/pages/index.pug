@@ -1,0 +1,144 @@
+extends ../layout/layout.pug
+
+block header
+  header.header
+    .section-bg.header__bg
+      .container 
+        .header__bg-dec
+
+    .container
+      .header__wrapper 
+        .header__offer  
+          h1 The Future Of Your Law Firm Marketing Is Here
+          p Purpose Driven Web Design, PPC & SEO For Lawyers That Want To Grow.
+          a.btn.btn-white(href="#") CALL NOW! 612-470-9877
+
+    .header__img-box
+      .container    
+        .header__img: img(src="img/header-img.png" width="1022" height="817")
+
+block content
+  section.about
+    .section-bg.about__bg
+      .container 
+        .about__bg-dec
+
+    .container 
+      .row 
+        .title: h3 About Gorilla Webtactics
+      .row 
+        .col-md-6
+          .about__partners 
+            .about__partners-item: img(src="img/partner1.png", alt="Google")
+            .about__partners-item: img(src="img/partner2.png", alt="Unbounce")
+            .about__partners-item: img(src="img/partner3.png", alt="Semrush")
+            .about__partners-item: img(src="img/partner4.png", alt="CallRail")
+
+        .col-md-6
+          .about__content.content 
+            p: b Gorilla Webtactics is a niche law firm marketing agency for lawyers that specializes in marketing for criminal defense, family law, injury, bankruptcy and B2C law firms.  We work with motivated managing partners and owners of law firms in major metropolitan areas who are looking for more clients or want to grow.
+            p For more information about our legal marketing services and pricing, give us a call at 612-470-9877  now or request more information online.
+            a.btn(href="#") REQUEST INFORMATION
+
+  section.why 
+    .section-bg.why__bg
+      .container 
+        .why__bg-dec
+
+    .container
+      .why__wrapper
+        .row 
+          .title: h3 Why Choose A Law Firm Marketing Agency Like Us?
+        .row 
+          .col-lg-4 
+            .card.why__card
+              .card__img  
+                img(src="img/why-icon1.svg", alt="Puzzle")
+              h6 Tried and Proven Strategies
+              p We’ve figured out exactly what works for law firms. All of our law firm marketing strategies have been tried and proven based on years of analytics. We’ve done the leg work so you don’t have to.
+
+          .col-lg-4 
+            .card.why__card
+              .card__img   
+                img(src="img/why-icon2.svg", alt="People")
+              h6 Better Qualified Leads
+              p Our signature client qualification method is designed to compile the data you need to deliver your highest qualified lead.
+
+          .col-lg-4 
+            .card.why__card
+              .card__img   
+                img(src="img/why-icon3.svg", alt="Diamond")
+              h6 Exclusive Service
+              p By exclusively helping you build your online reputation and gaining more visibility on Google than your competition, we can help you become the largest firm in your marketplace.
+
+  section.services
+    .section-bg.services__bg
+      .container 
+        .services__bg-dec
+        .section-bg__img.services__img: img(src="img/services-img.png", alt="Marketing")
+
+    .container 
+      .row 
+        .col-xl-7.col-lg-8
+          .content.services__content 
+            .title: h2 Our Digital Marketing Services For Attorneys
+            p Since 2010 we’ve been mastering the art of marketing online. In 2015 we niched into working exclusively for a law firms. Since we’ve been refining marketing for a law firm and have strategically tailored our law firm marketing services to the four main things that every firm needs to grow.
+
+          .card-box.services__card-box 
+            .card.card-box__item
+              .card__img
+                img(src="img/services-icon1.svg", alt="Design")
+              h6 Law Firm Website Design
+              p With a new and sleek looking law firm website that has been strategically designed to convert, we can help you get more leads than you’ve had before.
+
+            .card.card-box__item
+              .card__img
+                img(src="img/services-icon2.svg", alt="Statistic")
+              h6 SEO For Attorneys
+              p Our Law Firm SEO strategies have been tried and proven. We’ll help you get found on Google by more people when they want and need you the most.
+
+            .card.card-box__item
+              .card__img
+                img(src="img/services-icon3.svg", alt="Money")
+              h6 Pay-per-click For Lawyers
+              p We’ve mastered advertising on Google so you don’t have to. Implement our best practices and say hello to an endless stream of leads for a reasonable price.
+
+            .card.card-box__item
+              .card__img
+                img(src="img/services-icon4.svg", alt="Stars")
+              h6 Reputation Building
+              p Get more leads and better referrals by letting us help you improve your online reputations and generate more 5-star client reviews.
+  
+  - let $trigger = 'Your Go To Source For Law Firm Marketing Strategy'
+  include ../includes/trigger.pug
+
+  include ../includes/blog-features.pug
+
+  section.metv
+    .section-bg.metv__bg
+      .container
+        .metv__bg-dec
+        .section-bg__img.metv__img: img(src="img/metv-img.png", alt="Metaverse")
+
+    .container
+      .metv__wrapper 
+        .row 
+          .col-xl-7.col-lg-8
+            .content.metv__content 
+              .title: h3 Pioneering the Future Of Law Firm Marketing in The Metaverse
+              p Since 2010 we’ve been mastering the art of marketing online. In 2015 we niched into working exclusively for a law firms. Since we’ve been refining marketing for a law firm and have strategically tailored our law firm marketing services to the four main things that every firm needs to grow.
+            
+            .card-box.metv__card-box
+              .card.card-box__item 
+                .card__img
+                  img(src="img/metv-icon1.svg", alt="Br")
+                h6 Odio. Velit risus dictumst
+                p Dui odio. Urna nulla aenean vel lacinia tempus efficitur eget lacinia mattis dictum. Imperdiet pulvinar cursus lectus cursus sit amet, non mauris intege.
+
+              .card.card-box__item 
+                .card__img
+                  img(src="img/metv-icon2.svg", alt="Au")
+                h6 Ornare efficitur odio
+                p Et et ut. Et dui ornare adipiscing molestie lectus ultricies. Mattis sit morbi dictumst. Id orci, cursus ex. Est. Luctu.
+
+  include ../includes/reviews.pug
