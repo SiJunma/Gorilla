@@ -702,13 +702,13 @@ h6 {
 .title {
     @include no-mb();
     margin-bottom: 64px;
-    padding-top: 135px;
 
     &_blog {
         @include no-mb();
         font-size: 48px;
         margin-bottom: 64px;
         max-width: 620px;
+        padding-top: 135px;
 
         h3 {
             font-size: 48px;
