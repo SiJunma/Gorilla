@@ -57,6 +57,115 @@ h6 {
     letter-spacing: normal;
 }
 
+.main-wrapper {
+    display: flex;
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 380px;
+
+    aside {
+        flex-basis: 460px;
+        flex-shrink: 0;
+        padding-top: 245px;
+    }
+
+    .main-content {
+        flex-basis: 50%;
+        flex-grow: 1;
+        padding-right: 40px;
+    }
+}
+
+.pagination {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.blog-list {
+    padding-top: 135px;
+
+    .title {
+        @include no-mb();
+        margin-bottom: 62px;
+        
+        h3 {
+            font-size: 48px; 
+        }
+    }
+
+    &__card {
+        position: relative;
+        margin-bottom: 60px;
+        @include no-mb();
+
+        &-img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            overflow: hidden;
+            border-radius: 20px;
+            background: linear-gradient(180deg, rgba(28, 47, 80, 0.1) 28.8%, #1C2F50 100%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                max-height: 500px;
+                position: relative;
+                z-index: -1;
+            }
+        }
+
+        &-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            color: #fff;
+            max-width: 616px;
+            padding-left: 32px;
+            padding-bottom: 22px;
+            font-size: 16px;
+
+            letter-spacing: 0.005em;
+            color: #B5BAC9;
+            line-height: normal;
+            @include no-mb();
+
+            .blog-list__card-title {
+                display: block;
+                color: #fff;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                @include no-mb();
+                margin-bottom: 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #21BCFD;
+                letter-spacing: 0.005em;
+            }
+
+            h4 {
+                color: #fff;
+            }
+
+            small {
+                margin-top: 30px;
+                display: block;
+                font-size: 14px;
+                color: #DDF0FD;
+            }
+        }
+    }
+}
+
 .more {
     text-transform: uppercase;
     color: #1263E3;

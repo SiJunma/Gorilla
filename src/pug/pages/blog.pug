@@ -1,0 +1,139 @@
+extends ../layout/layout.pug
+
+block header
+  header.header.header_blog
+    .section-bg.header__bg
+      .container 
+        .header__bg-dec
+
+    .container
+      .header__wrapper 
+        .header__offer  
+          h1 EXPERT TIPS FOR BETTER RESULTS
+          p Find Advice on Web Design, SEO, PPC and Reputation Building Strategies For Law Firms
+
+    .header__img-box
+      .container    
+        .header__img: img(src="img/header-img-blog.png" width="774" height="659")
+  
+block content 
+  .container 
+    .main-wrapper
+
+      .main-content 
+        section.blog-list 
+
+          .title: h3 Law firm marketing
+
+          .blog-list__card 
+            .blog-list__card-img 
+              img(src="img/blog-card__img1.jpg", alt=" ")
+
+            .blog-list__card-content
+              a(href="#").blog-list__card-title: h4 Legal Advertising And Artificial Intelligence: What You Need To Know?
+              p It’s no secret that AI is disrupting the legal sector, but it isn’t necessarily a bad thing. Tech-savvy attorneys leverage artificial intelligence for analytics, research, e-discovery...
+
+              small: time Posted on <a href="#">January 24</a> , 2022 by <a href="#">David Juilfs</a>
+
+          .blog-list__card 
+            .blog-list__card-img 
+              img(src="img/blog-card__img2.jpg", alt=" ")
+
+            .blog-list__card-content
+              a(href="#").blog-list__card-title: h4 All You Need to Know About The Metaverse For Lawyers and Law Firms
+              p With increasing competition in the legal industry, law firms have to update their marketing efforts to sustain their presence in the digital and physical setup. ...
+
+              small: time Posted on <a href="#">January 11</a> , 2022 by <a href="#">David Juilfs</a>
+
+          .blog-list__card 
+            .blog-list__card-img 
+              img(src="img/blog-card__img3.jpg", alt=" ")
+
+            .blog-list__card-content
+              a(href="#").blog-list__card-title: h4 Top Legal Web Design Trends For 2022
+              p Your website should be a reflection of your expertise and authority while adequately demonstrating your brand to a broad audience...
+
+              small: time Posted on <a href="#">January 4</a> , 2022 by <a href="#">David Juilfs</a>
+
+          .blog-list__card 
+            .blog-list__card-img 
+              img(src="img/blog-card__img4.jpg", alt=" ")
+
+            .blog-list__card-content
+              a(href="#").blog-list__card-title: h4 5 Tips For Law Firm Marketing In The Metaverse
+              p With the latest rebranding of Facebook, the term “metaverse” has begun to crop up more and more in different contexts, from fashion, social media to education.   Metaverse enables users to immerse themselves in the...
+
+              small: time Posted on <a href="#">January 3</a> , 2022 by <a href="#">David Juilfs</a>
+
+          .blog-list__card 
+            .blog-list__card-img 
+              img(src="img/blog-card__img5.jpg", alt=" ")
+
+            .blog-list__card-content
+              a(href="#").blog-list__card-title: h4 Law Firms: A Comprehensive Guide To Inbound Marketing In 2021
+              p Like all other industries, law firms have also had to transition to the digital realm for advertising, marketing, lead generation and other business needs in the wake of the pandemic. After all, online marketing...
+
+              small: time Posted on <a href="#">December 27</a> , 2022 by <a href="#">David Juilfs</a>
+
+      aside 
+        .aside-block 
+          h4 Free Strategy Guide
+          h6 Get Your Hands On Our Free Strategy Guide to Law Firm Marketing: Online!
+          p Inside, you’ll discover eight hyper-specific ways to improve your online marketing in 2020 in the simple, no-nonsense language you’ve come to expect from Gorilla Webtactics.
+          a.btn(href="#")  get the guide
+
+        .aside-block
+          h5 Categories
+          ul.aside__categories
+            li: a(href="#") Bankruptcy Lead Generation (5)
+            li: a(href="#") Digital Content Marketing (1)
+            li: a(href="#") Email Marketing (2)
+            li: a(href="#") How To Get Clients For Law Firm (2)
+            li: a(href="#") Law Firm Marketing (104)
+            li: a(href="#") Law Firm PPC (10)
+            li: a(href="#") Law Firm SEO (37)
+            li: a(href="#") Law Firm Website Design (16)
+            li: a(href="#") Law Marketing (1)
+            li: a(href="#") Lawyer PPC (1)
+            li: a(href="#") Lawyer Reviews (2)
+          
+          a(href="#").btn.btn-round Show more
+
+        .aside-block
+          h5 Recent Posts
+
+          ul.aside__recent-post
+            li 
+              a(href="#") Legal Advertising And Artificial Intelligence: What You Need To Know?
+              small: time Jan 24, 2022
+            li 
+              a(href="#") All You Need to Know About The Metaverse For Lawyers and Law Firms
+              small: time Jan 24, 2022
+
+            li 
+              a(href="#") Top Legal Web Design Trends For 2022
+              small: time Jan 24, 2022
+
+            li 
+              a(href="#") 5 Tips For Law Firm Marketing In The Metaverse
+              small: time Jan 24, 2022
+
+      section.pagination
+        .pagination__prev: a(href="#") Previous 
+
+        .pagination__pages 
+          a(href="#").current 1
+          a(href="#") 2 
+          a(href="#") 3
+          a(href="#") 4
+          a(href="#") 5
+
+        .pagination__last-page 
+          a(href="#") 25
+
+        .pagination__next: a(href="#") Next
+
+
+
+
+
