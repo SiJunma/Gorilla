@@ -844,6 +844,27 @@ h6 {
                  max-width: 576px;
                 }
             }
+
+            &__bg {
+        
+                &-dec {
+                    &::before {
+                        left: -305px;
+                        background-image: url('../img/services-mini__bg1.svg');
+                        width: 584px;
+                        height: 433px;
+                        bottom: -40px;
+                    }
+        
+                    &::after {
+                        background-image: url('../img/services-mini__bg2.svg');
+                        right: -275px;
+                        width: 1227px;
+                        bottom: -18px;
+                        height: 1174px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1836,11 +1857,19 @@ textarea.form-control {
             }
 
             &::before {
-
+                background-image: url('../img/assurance__bg1.svg');
+                width: 1465px;
+                height: 177px;
+                right: -257px;
+                top: 0px;
             }
 
             &::after {
-
+                background-image: url('../img/assurance__bg2.svg');
+                width: 1995px;
+                height: 728px;
+                right: calc(50% - (1995px / 2));
+                bottom: -33px;
             }
         }
     }
@@ -2020,6 +2049,7 @@ textarea.form-control {
         padding-top: 0;
         background-color: transparent;
         display: none;
+        padding-right: 50px;
     
         ul {
             padding: 0;
