@@ -107,12 +107,22 @@
         line-height: 150%;
     }
 
-    .assurance__img {
-        right: -26px;
-        height: 815px;
-        width: 590px;
+    .assurance {
+        .title {
+            margin-bottom: 60px;
+        }
+
+        &__img {
+            right: -26px;
+            height: 815px;
+            width: 590px;
+        }
     }
-  }
+
+    .blog-features .title {
+        margin-bottom: 60px;
+    }
+}
 
 @media screen and (max-width: 1399px) {
     h1 {
@@ -253,6 +263,23 @@
                 height: 604px;
             }
         }
+
+        &_mini {
+            .services__bg-dec {
+                &::before {
+                    width: 424px;
+                    height: 283px;
+                    bottom: 160px;
+                    left: -45px;
+                }
+                &::after {
+                    right: -145px;
+                    width: 747px;
+                    bottom: 242px;
+                    height: 744px;
+                }
+            }
+        }
     }
 
     .blog-features {
@@ -281,7 +308,7 @@
         }
 
         .title {
-            margin-bottom: 70px;
+            margin-bottom: 50px;
             margin-top: 35px;
 
             &+.blog-features__wrapper {
@@ -389,6 +416,25 @@
             height: 756px;
             width: 544px;
         }
+
+        .title {
+            margin-bottom: 50px;
+        }
+
+        &__bg-dec {
+            &::before {
+                width: 1189px;
+                height: 127px;
+                right: -207px;
+            }
+
+            &::after {
+                width: 1155px;
+                height: 458px;
+                right: calc(50% - (1156px / 2));
+                bottom: -33px;
+            }
+        }
     }
 
     .footer {
@@ -406,8 +452,27 @@
     }
 
     .faq {
+        .title {
+            margin-bottom: 50px;
+        }
+
         &_blue {
             padding-top: 250px;
+
+            .faq__bg-dec {
+                &::before {
+                    width: 181px;
+                    height: 114px;
+                    top: 165px;
+                }
+
+                &::after {
+                    right: -48px;
+                    width: 178px;
+                    height: 118px;
+                    bottom: 50px;
+                }
+            }
         }
     }
 }
@@ -654,6 +719,21 @@
                 bottom: -6px;
             }
         }
+
+        &_mini {
+            .services__bg-dec {
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    right: -35px;
+                    width: 507px;
+                    bottom: 122px;
+                    height: 744px;
+                }
+            }
+        }
     }
 
     .trigger {
@@ -786,6 +866,42 @@
             height: 673px;
             width: 444px;
         }
+
+        &__bg-dec {
+            &::before {
+                width: 649px;
+                height: 77px;
+                right: 103px;
+                top: 30px;
+            }
+
+            &::after {
+                width: 785px;
+                height: 298px;
+                right: calc(50% - (785px / 2));
+                bottom: -33px;
+            }
+        }
+    }
+
+    .faq {
+        &_blue {
+            .faq__bg-dec {
+                &::before {
+                    left: -10px;
+                    width: 131px;
+                    height: 84px;
+                    top: 165px;
+                }
+
+                &::after {
+                    right: -48px;
+                    width: 148px;
+                    height: 98px;
+                    bottom: 70px;
+                }
+            }
+        }
     }
 }
 
@@ -913,6 +1029,10 @@
 
         &_blue {
             padding-bottom: 178px;
+
+            .title {
+                margin-bottom: 14px;
+            }
         }
     }
 
@@ -944,12 +1064,27 @@
 
     .blog-features {
         .title {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             margin-top: 0;
 
             &+.blog-features__wrapper {
                 margin-bottom: 55px;
             }
+        }
+    }
+
+    .faq {
+        .title {
+            margin-bottom: 30px;
+        }
+
+        &_blue {
+            padding-top: 220px;
+        }
+
+        .faq__wrapper .btn-round {
+            width: 240px;
+            min-width: unset;
         }
     }
 }
@@ -1001,9 +1136,12 @@
             }
 
             &::before {
-                width: 540px;
-                height: 362px;
+                width: 380px;
+                height: 252px;
+                left: -60px;
+                bottom: -13px;
             }
+
         }
 
         .title {
@@ -1020,6 +1158,22 @@
         .title {
             margin-bottom: 35px;
         }
+
+        &__bg-dec {
+            &::after {
+                right: 0px;
+                width: 138px;
+                height: 118px;
+                top: 16px;
+            }
+
+            &::before {
+                left: -21px;
+                width: 160px;
+                height: 85px;
+                bottom: 25px;
+            }
+        }
     }
 
     .services  {
@@ -1031,8 +1185,19 @@
             padding: 23px 12px;
         }
 
-        &_mini .services__card {
-            border-radius: 20px;
+        &_mini {
+            padding-top: 105px;
+
+            .services__card {
+                border-radius: 20px;
+            }
+
+            .services__bg-dec::after {
+                right: -35px;
+                width: 367px;
+                bottom: 252px;
+                height: 384px;
+            }
         }
     }
 
@@ -1045,10 +1210,36 @@
             &::before {
                 display: none;
             }
+
+            &::after {
+                right: 0;
+                width: 115px;
+                height: 96px;
+                top: 20px;
+            }
         }
 
         .card {
             padding: 23px 12px;
+        }
+    }
+
+    .reviews {
+        .title {
+            margin-bottom: 24px;
+        }
+
+        &__bg-dec {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                right: -136px;
+                width: 252px;
+                height: 134px;
+                bottom: 100px;
+            }
         }
     }
 
@@ -1088,9 +1279,29 @@
     }
 
     .assurance {
+        .title {
+            margin-bottom: 35px;
+        }
+
         &__checklist {
             ul {
                 flex-direction: column;
+            }
+        }
+
+        &__bg-dec {
+            &::before {
+                width: 519px;
+                height: 77px;
+                right: -17px;
+                top: 10px;
+            }
+
+            &::after {
+                width: 555px;
+                height: 298px;
+                right: calc(50% - (555px / 2));
+                bottom: -33px;
             }
         }
     }
@@ -1098,6 +1309,35 @@
     .faq {
         &_blue {
             padding-top: 220px;
+
+            .faq__bg-dec::after {
+                right: -20px;
+                width: 108px;
+                height: 70px;
+                bottom: 70px;
+            }
+        }
+    }
+
+    .blog-features {
+        .title {
+            margin-bottom: 35px;
+        }
+
+        &__bg-dec {
+            &::after {
+                right: -68px;
+                width: 363px;
+                height: 236px;
+                top: -60px;
+            }
+
+            &::before {
+                width: 340px;
+                height: 186px;
+                bottom: -15px;
+                left: -60px;
+            }
         }
     }
 }
