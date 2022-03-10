@@ -1,0 +1,389 @@
+.services.inner{
+  background: url(../img/marketing-inner_left-top_bg.png) left 25% top 75px no-repeat,
+              url(../img/marketing-inner_left-bottom_bg.png) left bottom no-repeat,
+              url(../img/marketing-inner_right-top_bg.png) right 25px top 25px no-repeat,
+              url(../img/marketing-inner_right-bottom_bg.png) right bottom no-repeat;
+}
+.list::before{
+  content: '';
+  display: inline-block;
+  background-image: url(../img/list_check.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+.list{
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 22px;
+ display: flex;
+ margin-bottom: 40px;
+}
+.services.inner ~.trigger{
+  margin-top: -75px;
+}
+.services.inner ~.trigger .trigger__wrapper::before,
+.services.inner ~.trigger .trigger__wrapper::after {
+  content: none;
+}
+.inner h1{
+margin-top: 140px;
+margin-bottom: 64px;
+}
+.inner h5{
+  margin-top: 64px;
+  margin-bottom: 30px;
+  color:  #08193A;
+}
+
+.inner .btn{
+  margin-top: 24px;
+  margin-bottom: 140px;
+}
+.marketing .header__offer{
+max-width: 668px;
+}
+.marketing .header__img{
+  right: 13px;
+  height: auto;
+  top:50px;
+}
+.seo-services.header__img{
+top:75px;
+}
+.marketing .header{
+  margin-top: 70px; 
+  min-height: 690px;
+  padding-top: 70px;
+}
+.marketing .header__bg{
+  clip-path: none;
+  -webkit-clip-path: none;
+}
+.marketing .services__img{
+  width: 650px;
+}
+.marketing .custom-padding{
+  padding-right: 6.66%;
+}
+.marketing .services{
+  padding-bottom: 60px;
+  padding-top: 195px;
+}
+.marketing .section-bg__img{
+  bottom: 60px;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.more_button{
+  text-transform: uppercase;
+  display: inline-block;
+  color: #1263E3;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.more_button:after{
+  content:'';
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  margin-left: 16px;
+  color: #1263E3;
+  background-image: url('../img/right_arrow-icon.svg');
+}
+.marketing-services .services__card-box{
+  max-width: 860px;
+}
+.marketing-services .card{
+  padding: 20px 19px;
+}
+.marketing-services .card-box__item{
+  flex-basis: 44.18%;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  max-height: 374px;
+}
+.marketing-services .card-box__item:nth-child(even){
+  margin-right: 0;
+}
+.marketing-services .card-big{
+  max-width: 962px;
+  padding: 56px 120px;
+  margin: 0 auto;
+}
+.marketing-services .card-big h5{
+  max-width: 576px;
+  margin-bottom: 23px;
+  margin-right: 144px;
+}
+.accordion{
+  transition: 0.4s;
+}
+.panel{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.text-center{
+  text-align: center;
+}
+.reviews .title h2.text-white{
+  color: #fff;
+}
+.marketing-services{
+  background: url("../img/marketing-services-bg1.png") left bottom no-repeat, 
+                    url("../img/marketing-services-bg2.png") right 80px top -100px no-repeat,
+                    url("../img/marketing-services-bg3.png") right bottom no-repeat;
+  
+}
+.seo-reviews-bg{
+  background: url(../img/seo-services-bg1.png) left top -52px no-repeat,
+              url(../img/seo-services-bg2.png) right 171px top -10px no-repeat;
+              height: 330px;
+}
+.bg-white{
+  background: #fff;
+}
+.marketing .trigger.mt-135{
+  margin-top: -135px;
+}
+.trigger.mt-135 h3{
+  margin-top: 150px;
+}
+.faq{
+  max-width: 965px;
+  margin: 64px auto;
+  color:#D2E6FC
+}
+.faq h5{
+  cursor: pointer;
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.faq .chevron-right::after{
+  content: '';
+  background: url(../img/shevron-right-icon.png) no-repeat;
+      height: 19px;
+    width: 12px;
+    position: absolute;
+    right: 0;
+    top:8px;
+    display: block;
+}
+.faq .chevron-top::after{
+    content: '';
+  background: url(../img/shevron-top-icon.png) no-repeat;
+      height: 12px;
+    width: 19px;
+    position: absolute;
+    right: 0;
+    top:8px;
+   
+}
+
+.seo-faq .chevron-right::after{
+  content: '';
+  background: url(../img/seo-chevron-right-icon.png) no-repeat;
+      height: 19px;
+    width: 12px;
+    position: absolute;
+    right: 0;
+    top:8px;
+    display: block;
+}
+
+.seo-faq .chevron-top::after{
+    content: '';
+  background: url(../img/seo-chevron-top-icon.png) no-repeat;
+      height: 12px;
+    width: 19px;
+    position: absolute;
+    right: 0;
+    top:8px;
+   
+}
+.faq p{
+  margin-top: 5px;
+  margin-bottom:10px;
+  overflow: hidden;
+  display: flex;
+}
+.line{
+  border-bottom: solid 1px #E8F1FF;
+  margin-top: 16px;
+}
+.marketing .reviews{
+  padding-bottom: 250px;
+}
+.marketing .msg-form__card{
+  margin-bottom: 110px;
+}
+.marketing .show-more{
+      text-transform: none;
+    border-radius: 30px;
+    -webkit-clip-path: none;
+    clip-path: none;
+    background-color: #fff;
+   
+    font-weight: 500;
+    font-size: 18px;
+    min-width: 240px; 
+    text-decoration: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));padding: 20px 70px;
+    margin-top: 0;
+}
+.marketing a.show-more{
+ color: #08193A;
+ display: inline-block;
+}
+.seo-features{
+  max-width: 1075px;
+  margin: 100px auto;
+  color: #ffffff;
+}
+.seo-features h5{
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 25px;
+}
+.seo-features p{
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.seo-features>.row>div:nth-child(odd){
+   padding-right: 100px;
+}
+.seo-features>.row>div:nth-child(n+3){
+margin-top: 80px;
+margin-bottom: 10px;
+}
+.seo-features>.row>div:nth-child(2) .feature-desc{
+  padding-right: 60px;
+}
+.seo-features-wrapper{
+  padding-bottom: 0;
+}
+.seo-features-wrapper .trigger__wrapper{
+  overflow: hidden;
+}
+.seo-faq{
+  margin-top: 140px;
+}
+.seo-faq h5{
+  color: #111111;
+}
+.seo-faq .line{
+  border-bottom: 1px solid #B0BDD0;
+}
+.seo-faq .panel{
+  color: #868B9A;
+  font-size: 14px;
+
+}
+.trigger.seo{
+  margin-top: 64px !important;
+}
+.seo-reviews{
+  padding-bottom: 35px !important;
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 96%);
+margin-top: 40px;
+  padding-top: 144px;
+}
+.seo-reviews .msg-form__bg{
+  clip-path: none;
+}
+.form-reviews.msg-form{
+  margin-top: 0;
+
+}
+.form-reviews .msg-form__card{
+  margin-bottom: 0;
+}
+.marketing .seo-inner{
+  padding-top: 225px;
+}
+.header__offer.seo__header{
+  max-width: 500px;
+}
+.header.ppc__header{
+  max-width: 580px;
+}
+.header__offer.web__header{
+max-width: 472px;
+}
+.web .services__img{
+  width: 850px;
+}
+.web.seo-reviews-bg{
+  height: 137px;
+}
+  .web-rewiews{
+
+    padding-bottom: 56px !important;
+  }
+
+
+  @media (max-width:1900px){
+    .services.inner{
+    background: url(../img/marketing-inner_left-top_bg.png) left 25% top 75px no-repeat,
+                url(../img/marketing-inner_left-bottom_bg.png) left bottom no-repeat,
+                url(../img/marketing-inner_right-top_bg.png) right -125px top 25px no-repeat,
+                url(../img/marketing-inner_right-bottom_bg.png) right bottom no-repeat;
+  }
+  }
+  @media (max-width:769px){
+    .marketing .header{
+      margin-top: -40px;
+      min-height: 600px;
+      padding-top: 80px;
+    }
+    .marketing .header__offer{
+      max-width: 420px;
+    }
+    .marketing .header__img{
+      top: 170px;
+    }
+    .marketing-services .card-box__item{
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .marketing-services .card{
+      padding: 50px 19px;
+    }
+    .marketing-services .card-big{
+      margin: 30px auto;
+    }
+  }
+  @media (max-width:536px){
+    .msg-form__form .form-control,
+    .msg-form__form .form-floating{
+      margin-right: 0;
+    }
+    .reviews{
+      padding-bottom: 100px;
+    }
+    .faq h5{
+      max-width: 390px;
+    }
+    .seo-features>.row>div{
+      margin-top: 30px !important;
+    }
+    .web-rewiews{
+  
+      padding-bottom: 0px !important;
+    }
+  }
