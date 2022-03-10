@@ -68,6 +68,15 @@
             height: 507px;
         }
       }
+
+      &_contact-us {
+        min-height: 756px;
+
+        .header__img {
+            width: 530px;
+            height: 496px;
+        }
+      }
     }
   
     .services {
@@ -202,6 +211,20 @@
             .header__img {
                 width: 448px;
                 height: 407px;
+            }
+        }
+
+        &_contact-us {
+            min-height: 666px;
+
+            .header__img {
+                width: 450px;
+                height: 416px;
+                right: 100px;
+            }
+
+            .header__offer {
+                max-width: 510px;
             }
         }
     }
@@ -726,6 +749,26 @@
                 max-width: 310px;
             }
         }
+
+        &_contact-us {
+            min-height: 586px;
+
+            .header__img {
+                width: 380px;
+                height: 356px;
+                bottom: 70px;
+                right: 80px;
+            }
+
+            .header__offer {
+                max-width: 430px;
+            }
+        }
+    }
+
+    .contact-us {
+        padding-bottom: 500px;
+        padding-top: 150px;
     }
 
     .guide-article  {
@@ -1006,6 +1049,26 @@
                 right: 0;
                 bottom: 77px;
             }
+        }
+
+        &_contact-us {
+            min-height: 515px; 
+
+            .header__img {
+                width: 310px;
+                height: 286px;
+                bottom: 70px;
+                right: 0;
+            }
+        }
+    }
+
+    .contact-us {
+        padding-bottom: 460px;
+        padding-top: 120px;
+
+        &__content {
+            font-size: 18px;
         }
     }
 
@@ -1445,6 +1508,15 @@
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .contact-us {
+        padding-bottom: 450px;
+
+        &__content {
+            font-size: 16px;
+            text-align: left;
+        }
     }
 }
 
