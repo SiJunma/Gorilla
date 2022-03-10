@@ -206,11 +206,6 @@ h6 {
         color: #021233;
         padding: 5px 12px;
         display: block;
-
-        &.current {
-            font-weight: 600;
-            color: #E27A00;
-        }
     }
 
     &__pages {
@@ -222,6 +217,13 @@ h6 {
             display: inline-block;
             content: '...';
             padding: 0 2px;
+        }
+
+        & > * {
+            &.current {
+                font-weight: 600;
+                color: #E27A00;
+            }
         }
     }
 
