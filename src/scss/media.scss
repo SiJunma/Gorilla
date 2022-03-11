@@ -69,6 +69,32 @@
         }
       }
 
+      &_blog {
+        min-height: 756px;
+
+        .header__img {
+            width: 684px;
+            height: 589px;
+            right: 25px;
+            bottom: 20px;
+        }
+      }
+
+      &_lfd {
+        min-height: 756px;
+
+        .header__offer {
+            max-width: 450px;
+        }
+
+        .header__img {
+            width: 457px;
+            height: 538px;
+            right: 113px;
+            bottom: 62px;
+        }
+      }
+
       &_contact-us {
         min-height: 756px;
 
@@ -77,6 +103,12 @@
             height: 496px;
         }
       }
+    }
+
+    .lfd-list {
+        &__img {
+            height: 265px;
+        }
     }
   
     .services {
@@ -205,6 +237,19 @@
             }
         }
 
+        &_blog {
+            min-height: 666px;
+
+            .header__img {
+                width: 564px;
+                height: 479px;
+            }
+
+            .header__offer {
+                max-width: 413px;
+            }
+        }
+
         &_mg {
             min-height: 666px;
 
@@ -215,6 +260,19 @@
             .header__img {
                 width: 448px;
                 height: 407px;
+            }
+        }
+
+        &_lfd {
+            min-height: 666px;
+
+            .header__offer {
+                max-width: 350px;
+            }
+
+            .header__img {
+                width: 448px;
+                height: 437px;
             }
         }
 
@@ -230,6 +288,24 @@
             .header__offer {
                 max-width: 510px;
             }
+        }
+    }
+
+    .main-wrapper {
+        aside {
+            flex-basis: 360px;
+        }
+    }
+
+    .lfd-list {
+        &__title {
+            h5 {
+                font-size: 20px;
+            }
+        }
+
+        &__img {
+            height: 228px;
         }
     }
 
@@ -760,6 +836,33 @@
             }
         }
 
+        &_blog {
+            min-height: 586px;
+
+            .header__img {
+                width: 454px;
+                height: 389px;
+            }
+
+            .header__offer {
+                max-width: 399px;
+            }
+        }
+
+        &_lfd {
+            min-height: 586px;
+
+            .header__img {
+                width: 358px;
+                height: 357px;
+                right: 118px;
+            }
+
+            .header__offer {
+                max-width: 310px;
+            }
+        }
+
         &_contact-us {
             min-height: 586px;
 
@@ -773,6 +876,35 @@
             .header__offer {
                 max-width: 430px;
             }
+        }
+    }
+
+    .lfd-list {
+        padding-bottom: 525px;
+
+        &__img {
+            height: 190px;
+            margin-bottom: 20px;
+        }
+
+        &__wrapper {
+            row-gap: 70px;
+        }
+    }
+
+    .title {
+        &_blog {
+            h3 {
+                font-size: 42px;
+            }
+            margin-bottom: 34px;
+            padding-top: 105px;
+        }
+    }
+
+    .main-wrapper {
+        aside h4 {
+            font-size: 28px;
         }
     }
 
@@ -1056,6 +1188,41 @@
             }
         }
 
+        &_blog {
+            min-height: 515px;
+
+            .header__img {
+                width: 334px;
+                height: 329px;
+                right: 0;
+            }
+
+            .header__offer {
+                max-width: 329px;
+            }
+        }
+
+        &_blog_article {
+            & + main {
+                .main-wrapper aside {
+                    order: unset;
+                    margin-bottom: 0;
+                    margin-top: 60px;
+                }
+            }
+        }
+
+        &_lfd {
+            min-height: 515px;
+
+            .header__img {
+                width: 369px;
+                height: 329px;
+                right: 0;
+                bottom: 29px;
+            }
+        }
+
         &_mg {
             min-height: 515px;
 
@@ -1079,6 +1246,20 @@
         }
     }
 
+    .lfd-list {
+        padding-top: 90px;
+        padding-bottom: 485px;
+
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__img {
+            height: 217px;
+            margin-bottom: 30px;
+        }
+    }
+
     .design {
         &__services {
             font-size: 16px;
@@ -1093,12 +1274,65 @@
         }
     }
 
+    .main-wrapper {
+
+        .main-content {
+            flex-basis: 100%;
+            padding-right: 0;
+        }
+
+        aside {
+            order: -1;
+            flex-basis: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+
+            .btn {
+                margin-top: 40px;
+            }
+
+            .aside-block {
+                flex-basis: 50%;
+                padding-right: 20px;
+
+                &:first-child {
+                    flex-basis: 100%;
+                }
+
+                &:last-child {
+                    padding-left: 20px;
+                    padding-right: 0;
+                }
+
+                &:nth-last-child(2) {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
     .contact-us {
         padding-bottom: 460px;
         padding-top: 120px;
 
         &__content {
             font-size: 18px;
+        }
+    }
+
+    .blog-list {
+        &__card-img {
+            max-height: 390px;
+
+            img {
+                max-height: 390px;
+            }
         }
     }
 
@@ -1288,6 +1522,76 @@
         }
     }
 
+    .title_blog h3 {
+        font-size: 40px;
+    }
+
+    .about-author {
+
+        &__content {
+            font-size: 14px;
+        }
+    }
+
+    .blog-list {
+        &__card-img {
+            max-height: 320px;
+
+            img {
+                max-height: 320px;
+            }
+        }
+
+        &__card-content {
+            color: #ffffff;
+            line-height: 130%;
+            font-size: 14px;
+
+            .blog-list__card-title {
+                display: block;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            small {
+                margin-top: 20px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .pagination {
+        padding-top: 60px;
+    }
+
+    .main-wrapper {
+        padding-bottom: 110px;
+
+        aside {
+            h4 {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+
+            .aside__categories {
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .aside__categories,
+            .aside__recent-post {
+                font-size: 16px;
+            }
+
+            .btn {
+                min-width: unset;
+                padding: 0 40px;
+            }
+        }
+
+    }
+
     .design {
         &__wrapper {
             flex-direction: column;
@@ -1302,6 +1606,31 @@
             width: 100%;
             padding-left: 0;
             padding-top: 40px;
+        }
+    }
+
+    .lfd-list {
+        &__img {
+            height: 159px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            h5 {
+                font-size: 16px;
+            } 
+        }
+
+        &__wrapper {
+            row-gap: 50px;
+        }
+    }
+
+    .blog-article {
+        font-size: 16px;
+
+        .title {
+            margin-bottom: 35px;
         }
     }
 
@@ -1565,6 +1894,10 @@
             text-align: left;
         }
     }
+
+    .about-author {
+        margin-top: 40px;
+    }    
 }
 
 @media screen and (max-width: 536px)  {
@@ -1612,13 +1945,51 @@
             padding: 36px 40px 44px;
         }
 
-        .form-group > * {
-            margin-right: 0;
-            margin-bottom: 30px;
-
-            &:last-child {
-                margin-bottom: 0;
+        &__form {
+            .form-group > * {
+                margin-right: 0;
+                margin-bottom: 30px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
+        }
+    }
+
+    .about-author {
+        &__card {
+            padding: 36px 40px 44px;
+        }
+    }
+
+    .blog-list {
+        &__card-img {
+            max-height: unset;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: unset;
+
+            img {
+                max-height: unset;
+                height: 100%;
+            }
+        }
+
+        &__card {
+            margin-bottom: 30px;
+        }
+
+        &__card-content {
+            padding-top: 60px;
+            position: relative;
+            z-index: 1;
+            min-height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
         }
     }
 
@@ -1639,6 +2010,41 @@
     .services {
         &_mini .services__card {
             padding: 35px 29px 31px;
+        }
+    }
+
+    .lfd-list {
+        &__img {
+            height: 138px;
+            border-radius: 10px;
+        }
+
+        &__wrapper {
+            column-gap: 20px;
+        }
+    }
+
+    .main-wrapper {
+        aside {
+            h5 {
+                margin-bottom: 20px;
+
+            }
+
+            .aside-block {
+                flex-basis: 100%;
+                margin-bottom: 60px;
+
+                &:nth-last-child(2) {
+                    margin-bottom: 60px;
+                    padding-right: 0;
+                }
+
+                &:last-child {
+                    padding-left: 0;
+                    margin: 0;
+                }
+            }
         }
     }
 }
@@ -1663,6 +2069,16 @@
     .content {
         .btn {
             margin-top: 40px;
+        }
+    }
+
+    .lfd-list {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            height: 60vw;
         }
     }
 
@@ -1827,6 +2243,12 @@
         }
     }
 
+    .about-author {
+        &__card {
+            padding: 36px 25px 30px;
+        }
+    }
+
     .design {
         &__quote {
             padding: 36px 25px 30px;
@@ -1840,6 +2262,14 @@
     .why__card {
         h6 {
             margin-bottom: 13px;
+        }
+    }
+
+    .blog-list {
+        &__card-content {
+            padding-left: 22px;
+            padding-bottom: 21px;
+            padding-right: 20px;
         }
     }
 
