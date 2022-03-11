@@ -5,8 +5,10 @@ section.blog-features
 
   .container 
     if $blogFeaturesTitle
-    .title: h3= $blogFeaturesTitle
-
+      .title: h3= $blogFeaturesTitle
+    else 
+      - ''
+      
     .blog-features__wrapper 
       .blog-features__main
         a(href="#").blog-features__main-card 

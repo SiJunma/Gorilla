@@ -1,0 +1,79 @@
+extends ../layout/layout.pug
+
+block header
+  header.header.header_ppc
+    .section-bg.header__bg
+      .container 
+        .header__bg-dec
+
+    .container
+      .header__wrapper 
+        .header__offer  
+          h1 PROFITABLE PPC ADVERTISING FOR LAWYERS
+          p $0 Set-Up Fees ⋅ No Long Term Contracts ⋅ Start Today! 
+          a.btn.btn-white(href="#") CALL NOW! 612-470-9877
+
+    .header__img-box
+      .container    
+        .header__img: img(src="img/header-img-ppc.png" width="562" height="529")
+
+block content 
+  - let $assuranceTitle = 'Your Attorney PPC and Google Adwords Experts'
+  - let $assuranceText = 'Since 2010, our agency has been mastering Google ads for Lawyers. Implement our tried and proven Law Firm PPC strategies and say hello to an endless stream of qualified leads. Since, we only drive traffic to your website from people that need your help, your worries about sky-high acquisition costs can officially disappear. Call today to learn how our agency can help you win more clients…'
+  - let $assuranceList = ['Lower Your Client Acquisition Costs', 'Improve Your PPC Marketing ROI', 'Generate The Leads You Need']
+  - let $assuranceImg = 'img/assurance-img.png' 
+  include ../includes/assurance.pug
+
+  section.benefits 
+    .section-bg.benefits__bg
+
+    .container 
+      .title: h2 The Benefits of Our SEO Agency For Lawyers
+
+      .row 
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img1.svg", alt="Leads", width="52", height="45")
+
+            h6 Better Qualified Leads
+
+            .benefits__text 
+              p Even the best ad won’t do a bit of good until it gets in front of the right people. At Gorilla Webtactics, we know exactly how to strengthen your PPC marketing and get you in front of the right people who are ready for your help NOW!
+
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img5.svg", alt="Leads", width="52", height="52")
+
+            h6 Reasonable ROI
+
+            .benefits__text 
+              p Simply put, delivering targeted Google Ads for lawyers is a great solution as long as you’re getting a reasonable ROI. When you implement our tried and proven strategies your investment will always be recouped with qualified clients.
+
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img6.svg", alt="Leads", width="56", height="56")
+
+            h6 12+ Years Experience
+
+            .benefits__text 
+              p Working with an agency that doesn’t have the PPC marketing experience that we do could cost you… in more ways than one. We succeed with Google ads for attorneys because we’ve been designing landing pages and managing ads since 2010. Simply put, We know exactly how to deliver you the most profitable clients.
+
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img4.svg", alt="Leads", width="54", height="51")
+
+            h6 No Long Term Contracts
+
+            .benefits__text 
+              p There’s one thing that always puts our agency in the spotlight: our constant commitment to your success. If you’re not satisfied our company, the return on your investment or simply don’t need anymore leads, you can cancel our services at anytime. Our philosophy is pretty simple, actually. Don’t pay if you don’t want it.
+
+  - let $faqTitle = 'Common Law Firm SEO Questions'
+  include ../includes/faq.pug
+
+  - let $trigger = 'Lawyer PPC Blogs'
+  include ../includes/trigger.pug
+
+  include ../includes/blog-features.pug
+
+  - let $reviewsClass = 'reviews_blue'
+  include ../includes/reviews.pug

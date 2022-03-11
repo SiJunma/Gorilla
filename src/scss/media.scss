@@ -56,6 +56,20 @@
         }
       }
 
+      &_seo,
+      &_ppc {
+        min-height: 756px;
+
+        .header__offer {
+            max-width: 460px;
+        }
+
+        .header__img {
+            width: 558px;
+            height: 507px;
+        }
+      }
+
       &_mg {
         min-height: 756px;
 
@@ -250,6 +264,21 @@
             }
         }
 
+        &_seo,
+        &_ppc {
+            min-height: 666px;
+
+            .header__offer {
+                max-width: 350px;
+                margin-bottom: 20px;
+            }
+
+            .header__img {
+                width: 448px;
+                height: 407px;
+            }
+        }
+
         &_mg {
             min-height: 666px;
 
@@ -288,6 +317,12 @@
             .header__offer {
                 max-width: 510px;
             }
+        }
+    }
+
+    .benefits {
+        &__card {
+            padding: 0 40px;
         }
     }
 
@@ -822,6 +857,21 @@
             }
         }
 
+        &_seo,
+        &_ppc {
+            min-height: 586px;
+
+            .header__img {
+                width: 358px;
+                height: 327px;
+                right: 118px;
+            }
+
+            .header__offer {
+                max-width: 310px;
+            }
+        }
+
         &_mg {
             min-height: 586px;
 
@@ -889,6 +939,19 @@
 
         &__wrapper {
             row-gap: 70px;
+        }
+    }
+
+    .benefits {
+        padding-top: 118px;
+        padding-bottom: 65px;
+
+        .title {
+            margin-bottom: 60px;
+        }
+
+        &__card {
+            margin-bottom: 60px;
         }
     }
 
@@ -1124,6 +1187,8 @@
     }
 
     .faq {
+        padding-top: 125px;
+
         &_blue {
             .faq__bg-dec {
                 &::before {
@@ -1223,6 +1288,33 @@
             }
         }
 
+        &_seo,
+        &_ppc {
+            min-height: 515px;
+
+            .header__img {
+                width: 328px;
+                height: 277px;
+                right: 0;
+                top: unset;
+                bottom: 47px;
+            }
+
+            &~main .blog-features {
+                padding-bottom: 145px;
+                padding-top: 125px;
+            }
+        }
+
+        &_ppc {
+            min-height: 585px;
+
+            .header__img {
+                width: 358px;
+                height: 337px;
+            }
+        }
+
         &_mg {
             min-height: 515px;
 
@@ -1244,6 +1336,13 @@
                 right: 0;
             }
         }
+    }
+
+    .benefits__card {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
     }
 
     .lfd-list {
@@ -1518,6 +1617,14 @@
             &::after {
                 right: -540px;
                 top: 140px;
+            }
+        }
+    }
+
+    .benefits {
+        .title {
+            h2 {
+                text-align: left;
             }
         }
     }
@@ -2046,6 +2153,10 @@
                 }
             }
         }
+    }
+
+    .faq .title h3 {
+        text-align: left;
     }
 }
 

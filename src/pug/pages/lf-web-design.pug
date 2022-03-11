@@ -1,0 +1,76 @@
+extends ../layout/layout.pug
+
+block header
+  header.header.header_lf-web-design
+    .section-bg.header__bg
+      .container 
+        .header__bg-dec
+
+    .container
+      .header__wrapper 
+        .header__offer  
+          h1 LAW FIRM WEB DESIGN
+
+    .header__img-box
+      .container    
+        .header__img: img(src="img/header-img-lfwd.png" width="524" height="620")
+
+block content 
+  - let $assuranceTitle = 'Your Strategic Law Firm Website Design Experts'
+  - let $assuranceText = 'At Gorilla Webtactics, we understand that the goal of a website design for law firms should be to generate new clients. This is why we strategically create all of our law firm web designs with that factor in mind. When you work with the law firm website design experts at Gorilla Webtactics, we will make it a point to…'
+  - let $assuranceList = ['Turn Your Website Into The Ultimate Lead Generating Machine', 'Engineer The Perfect Website User Experience', 'Help You Convert More Visitors Into Qualified Leads']
+  - let $assuranceImg = 'img/assurance-img2.png' 
+  include ../includes/assurance.pug
+
+  section.benefits 
+    .section-bg.benefits__bg
+
+    .container 
+      .title: h2 The Benefits of Our SEO Agency For Lawyers
+
+      .row 
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img1.svg", alt="Leads", width="52", height="45")
+
+            h6 More Leads
+
+            .benefits__text 
+              p In one word, our approach to Law Firm SEO emphasizes you. We leverage advanced analytics tools and market research to ensure that your website is getting in front of your target market, and even further by driving qualified leads. Our clients experience a huge boost in business as a result of our tried and proven attorney SEO marketing methods.
+
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img2.svg", alt="Leads", width="54", height="40")
+
+            h6 Faster Growth
+
+            .benefits__text 
+              p Successful SEO for Lawyers is about consistently connecting with the right people at the right moment, for the right purpose. When you have all three elements lined up, aligning with a prospective client becomes easy. Our law firm SEO experts will make sure you’re website is attracting the right type of people.
+
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img3.svg", alt="Leads", width="39", height="60")
+
+            h6 Why Go Gorilla?
+
+            .benefits__text 
+              p At Gorilla Webtactics, we take a strategic approach to website design for law firms. We don’t just focus on creating a beautiful looking website; we focus on fueling your growth and profitability because the bottom line is that your success is our success..
+
+        .col-lg-6 
+          .benefits__card 
+            .benefitd__img: img(src="img/benefits__img4.svg", alt="Leads", width="54", height="51")
+
+            h6 Satisfaction Guaranteed
+
+            .benefits__text 
+              p Our main goal is to bring you the best law firm web designs in the industry. That’s why we offer free mock-ups and a satisfaction guarantee. We’ll ensure you’ll be happy with your law firm web design, by offering unlimited design revisions throughout the entire creative process.
+
+  - let $faqTitle = 'Common Law Firm SEO Questions'
+  include ../includes/faq.pug
+
+  - let $trigger = 'Lawyer SEO Blogs'
+  include ../includes/trigger.pug
+
+  include ../includes/blog-features.pug
+
+  include ../includes/reviews.pug
