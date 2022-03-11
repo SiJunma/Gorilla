@@ -56,6 +56,22 @@
         }
       }
 
+      &_lf-web-design {
+        min-height: 756px;
+
+            .header__img {
+                width: 444px;
+                height: 530px;
+                right: 157px;
+                bottom: 62px;
+            }
+
+            .header__offer {
+                margin-bottom: 40px;
+            }
+            
+        }
+
       &_seo,
       &_ppc {
         min-height: 756px;
@@ -262,6 +278,32 @@
             .header__offer {
                 max-width: 413px;
             }
+        }
+
+        &_lf-web-design {
+            min-height: 666px;
+    
+                .header__img {
+                    width: 384px;
+                    height: 450px;
+                }
+    
+                .header__offer {
+                    max-width: 380px;
+                }
+
+                & ~ main {
+                    .assurance {
+                        padding-bottom: 190px;
+                        
+                        &__img {
+                            width: 779px;
+                            height: 711px;
+                            right: -118px;
+                            bottom: 40px;
+                        }
+                    }
+                }
         }
 
         &_seo,
@@ -857,6 +899,32 @@
             }
         }
 
+        &_lf-web-design {
+            min-height: 586px;
+    
+                .header__img {
+                    width: 324px;
+                    height: 380px;
+                    bottom: 52px;
+                }
+    
+                .header__offer {
+                    max-width: 310px;
+                }
+
+                & ~ main {
+                    .assurance {
+                        
+                        &__img {
+                            width: 679px;
+                            height: 621px;
+                            right: -88px;
+                            bottom: 40px;
+                        }
+                    }
+                }
+        }
+
         &_seo,
         &_ppc {
             min-height: 586px;
@@ -1251,6 +1319,23 @@
                 right: 0;
                 bottom: 29px;
             }
+        }
+
+        &_lf-web-design {
+            min-height: 515px;
+    
+                .header__img {
+                    width: 274px;
+                    height: 320px;
+                    bottom: 42px;
+                    right: 30px;
+                }
+
+                & ~ main {
+                    .assurance {
+                        padding-bottom: 140px;
+                    }
+                }
         }
 
         &_blog {

@@ -1,5 +1,4 @@
 @import 'bootstrap-grid-reboot.min', 'splide-core.min', 'variables';
-// @import '3pages';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 body {
@@ -1010,6 +1009,53 @@ h6 {
         & ~ main .blog-features {
             padding-bottom: 205px;
             padding-top: 175px;
+        }
+    }
+
+    &_lf-web-design {
+        min-height: 810px;
+
+        .header__bg {
+            clip-path: unset;
+        }
+
+        & ~ main {
+            .assurance {
+                padding-bottom: 240px;
+
+                &__img {
+                    width: 869px;
+                    height: 901px;
+                    right: -118px;
+                }
+            }
+
+            .blog-features {
+                &__bg {
+                    background: #f5faff;
+                }
+
+                &__bg-dec::before,
+                &__bg-dec::after {
+                    display: none;
+                }
+            }
+
+            .reviews {
+                padding-top: 115px;
+
+                &__bg {
+                    clip-path: unset;
+                }
+            }
+        }
+
+        .header__img {
+            width: 524px;
+            height: 620px;
+            right: 67px;
+            bottom: 22px;
+            top: unset;
         }
     }
 
