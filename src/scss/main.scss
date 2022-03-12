@@ -1435,13 +1435,11 @@ h6 {
         @include no-mb();
     }
 
-    .guide-list {
+    .guide-list,
+    ul {
         padding: 0;
         margin: 0;
         list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 30px;
         padding: 0;
         margin: 0;
         color: #5C5D62;
@@ -1457,6 +1455,7 @@ h6 {
             position: relative;
             padding-left: 34px;
             display: flex;
+            margin-bottom: 30px;
 
             &::before {
                 @include svg(20px, 20px);
