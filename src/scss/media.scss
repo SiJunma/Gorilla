@@ -104,7 +104,7 @@
 
         & + main {
             background: 
-            url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 1163px 742px,
+            url('../img/guide__img5.svg') left calc(50% - 411px) bottom 410px no-repeat / 1163px 742px,
             url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 1283px 1026px,
             url('../img/guide__img3.svg') left calc(50% - 911px) top 1830px no-repeat / 1243px 1146px,
             url('../img/guide__img2.svg') right calc(50% - 571px) top -60px no-repeat / 1213px 1419px,
@@ -126,7 +126,7 @@
                 z-index: 0;
     
                 background: 
-                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 1163px 742px,
+                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 410px no-repeat / 1163px 742px,
                 url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 1283px 1026px,
                 url('../img/guide__img3.svg') left calc(50% - 911px) top 1830px no-repeat / 1243px 1146px,
                 url('../img/guide__img2.svg') right calc(50% - 571px) top -60px no-repeat / 1213px 1419px,
@@ -378,7 +378,7 @@
 
             & + main {
                 background: 
-                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 763px 642px,
+                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 410px no-repeat / 763px 642px,
                 url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 923px 776px,
                 url('../img/guide__img3.svg') left calc(50% - 731px) top 1830px no-repeat / 913px 816px,
                 url('../img/guide__img2.svg') right calc(50% - 461px) top -60px no-repeat / 933px 1069px,
@@ -397,7 +397,7 @@
 
                 & + main {
                     background: 
-                    url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 763px 642px,
+                    url('../img/guide__img5.svg') left calc(50% - 411px) bottom 410px no-repeat / 763px 642px,
                     url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 923px 776px,
                     url('../img/guide__img3.svg') left calc(50% - 731px) top 1830px no-repeat / 913px 816px,
                     url('../img/guide__img2.svg') right calc(50% - 461px) top -60px no-repeat / 933px 1069px,
@@ -1575,6 +1575,7 @@
 
         &_blog_article {
             & + main {
+                padding-top: 30px;
                 .main-wrapper aside {
                     order: unset;
                     margin-bottom: 0;
