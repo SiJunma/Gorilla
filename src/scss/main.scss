@@ -1439,11 +1439,9 @@ h6 {
         padding: 0;
         margin: 0;
         list-style: none;
-
-        list-style-position: inside;
-        -moz-column-count: 2; /* Firefox */
-        -webkit-column-count: 2; /* Safari and Chrome */
-        column-count: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
         padding: 0;
         margin: 0;
         color: #5C5D62;
@@ -1456,7 +1454,6 @@ h6 {
         @include no-mb();
 
         li {
-            padding-bottom: 30px;
             position: relative;
             padding-left: 34px;
             display: flex;
