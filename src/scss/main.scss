@@ -352,7 +352,7 @@ h6 {
 
     @include no-mb();
 
-    & > img,
+    img,
     .article-img {
         border-radius: 20px;
         width: 100%;
@@ -364,6 +364,19 @@ h6 {
 
         &:first-child {
             margin-top: 0;
+        }
+    }
+
+    figure {
+        margin-bottom: 50px;
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        img {
+            margin: 0;
         }
     }
 }
@@ -1357,7 +1370,8 @@ h6 {
        color: #021233;
        margin-top: 40px;
 
-       & + img.article-img {
+       & + img.article-img,
+       & + figure {
            margin-top: 20px;
        }
     }
@@ -1368,6 +1382,11 @@ h6 {
         line-height: 150%; 
         margin-top: 40px;
         margin-bottom: 40px;
+
+        & + img.article-img,
+        & + figure {
+            margin-top: 20px;
+        }
     }
 
     blockquote {
@@ -1393,6 +1412,27 @@ h6 {
         height: auto;
         max-height: 450px;
         object-fit: cover;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        & + .msg-form__form {
+            margin-top: 20px;
+        }
+    }
+
+    figure {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        img {
+            margin: 0;
+        }
 
         & + .msg-form__form {
             margin-top: 20px;
