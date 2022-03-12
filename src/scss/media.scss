@@ -102,6 +102,39 @@
       &_blog {
         min-height: 756px;
 
+        & + main {
+            background: 
+            url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 1163px 742px,
+            url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 1283px 1026px,
+            url('../img/guide__img3.svg') left calc(50% - 911px) top 1830px no-repeat / 1243px 1146px,
+            url('../img/guide__img2.svg') right calc(50% - 571px) top -60px no-repeat / 1213px 1419px,
+            url('../img/guide__img1.svg') left calc(50% - 691px) top 30px no-repeat / 1266px 1225px,
+            linear-gradient(180deg, #EFFAFD -18.06%, #FAFAFA 99.4%);
+        }
+
+        &_article {
+
+            .header__img {
+                width: 594px;
+                height: 499px;
+                right: 25px;
+                bottom: 90px;
+            }
+
+            & + main {
+                position: relative;
+                z-index: 0;
+    
+                background: 
+                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 1163px 742px,
+                url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 1283px 1026px,
+                url('../img/guide__img3.svg') left calc(50% - 911px) top 1830px no-repeat / 1243px 1146px,
+                url('../img/guide__img2.svg') right calc(50% - 571px) top -60px no-repeat / 1213px 1419px,
+                url('../img/guide__img1.svg') left calc(50% - 691px) top 30px no-repeat / 1266px 1225px,
+                linear-gradient(180deg, #EFFAFD -21.39%, #FAFAFA 99.39%);
+            }
+        }
+
         .header__img {
             width: 684px;
             height: 589px;
@@ -139,6 +172,22 @@
         &__img {
             height: 265px;
         }
+
+        &__bg-dec {
+            &::before {
+                left: -930px;
+                width: 1643px;
+                height: 1455px;
+                top: 35px;
+            }
+
+            &::after {
+                right: -750px;
+                width: 1583px;
+                height: 1598px;
+                top: -28px;
+            }
+        }
     }
   
     .services {
@@ -157,6 +206,24 @@
 
     .design-page {
         padding-bottom: 500px;
+    }
+
+    .design {
+        &__bg-dec {
+            &::before {
+                left: -670px;
+                width: 1643px;
+                height: 1455px;
+                top: 145px;
+            }
+
+            &::after {
+                right: -750px;
+                width: 1583px;
+                height: 1598px;
+                top: 0px;
+            }
+        }
     }
 
     .about {
@@ -207,8 +274,38 @@
         }
     }
 
-    .blog-features .title {
-        margin-bottom: 60px;
+    .blog-features {
+        .title {
+            margin-bottom: 60px;
+        }
+    }
+
+    .guide-article {
+        &__bg {
+            background: 
+                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 1163px 742px,
+                url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 1283px 1026px,
+                url('../img/guide__img3.svg') left calc(50% - 911px) top 1830px no-repeat / 1243px 1146px,
+                url('../img/guide__img2.svg') right calc(50% - 571px) top -60px no-repeat / 1213px 1419px,
+                url('../img/guide__img1.svg') left calc(50% - 691px) top 30px no-repeat / 1266px 1225px,
+                linear-gradient(180deg, #EFFAFD -21.39%, #FAFAFA 99.39%);
+        }
+    }
+
+    .contact-us {
+        &__bg-dec {
+            &::before {
+                width: 824px;
+                height: 560px;
+                top: 70px;
+            }
+
+            &::after {
+                width: 648px;
+                height: 659px;
+                right: -78px;
+            }
+        }
     }
 }
 
@@ -277,6 +374,36 @@
 
             .header__offer {
                 max-width: 413px;
+            }
+
+            & + main {
+                background: 
+                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 763px 642px,
+                url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 923px 776px,
+                url('../img/guide__img3.svg') left calc(50% - 731px) top 1830px no-repeat / 913px 816px,
+                url('../img/guide__img2.svg') right calc(50% - 461px) top -60px no-repeat / 933px 1069px,
+                url('../img/guide__img1.svg') left calc(50% - 551px) top 30px no-repeat / 1016px 1015px,
+                linear-gradient(180deg, #EFFAFD -18.06%, #FAFAFA 99.4%);
+            }
+
+            &_article {
+
+                .header__img {
+                    width: 485px;
+                    height: 409px;
+                    right: 25px;
+                    bottom: 90px;
+                }
+
+                & + main {
+                    background: 
+                    url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 763px 642px,
+                    url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 923px 776px,
+                    url('../img/guide__img3.svg') left calc(50% - 731px) top 1830px no-repeat / 913px 816px,
+                    url('../img/guide__img2.svg') right calc(50% - 461px) top -60px no-repeat / 933px 1069px,
+                    url('../img/guide__img1.svg') left calc(50% - 551px) top 30px no-repeat / 1016px 1015px,
+                    linear-gradient(180deg, #EFFAFD -21.39%, #FAFAFA 99.39%);
+                }
             }
         }
 
@@ -384,11 +511,43 @@
         &__img {
             height: 228px;
         }
+
+        &__bg-dec {
+            &::before {
+                left: -448px;
+                width: 933px;
+                height: 845px;
+                top: 62px;
+            }
+
+            &::after {
+                right: -572px;
+                width: 1197px;
+                height: 1129px;
+                top: 4px;
+            }
+        }
     }
 
     .design {
         &__quote {
             padding: 50px 60px 44px;
+        }
+
+        &__bg-dec {
+            &::before {
+                left: -448px;
+                width: 933px;
+                height: 845px;
+                top: 102px;
+            }
+
+            &::after {
+                right: -572px;
+                width: 1197px;
+                height: 1129px;
+                top: 34px;
+            }
         }
     }
 
@@ -687,6 +846,33 @@
             }
         }
     }
+
+    .guide-article {
+        &__bg {
+            background: 
+                url('../img/guide__img5.svg') left calc(50% - 411px) bottom 40px no-repeat / 763px 642px,
+                url('../img/guide__img4.svg') right calc(50% - 441px) top 5170px no-repeat / 923px 776px,
+                url('../img/guide__img3.svg') left calc(50% - 731px) top 1830px no-repeat / 913px 816px,
+                url('../img/guide__img2.svg') right calc(50% - 461px) top -60px no-repeat / 933px 1069px,
+                url('../img/guide__img1.svg') left calc(50% - 551px) top 30px no-repeat / 1016px 1015px,
+                linear-gradient(180deg, #EFFAFD -21.39%, #FAFAFA 99.39%);
+        }
+    }
+
+    .contact-us {
+        &__bg-dec {
+            &::before {
+                width: 661px;
+                height: 375px;
+                top: 109px;
+            }
+
+            &::after {
+                width: 448px;
+                height: 469px;;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -965,6 +1151,16 @@
             .header__offer {
                 max-width: 399px;
             }
+
+            &_article {
+                
+                .header__img {
+                    width: 415px;
+                    height: 339px;
+                    right: 25px;
+                    bottom: 90px;
+                }
+            }
         }
 
         &_lfd {
@@ -999,6 +1195,7 @@
 
     .lfd-list {
         padding-bottom: 525px;
+        padding-top: 100px;
 
         &__img {
             height: 190px;
@@ -1007,6 +1204,18 @@
 
         &__wrapper {
             row-gap: 70px;
+        }
+
+        &__bg-dec {
+            &::before {
+                top: 59px;
+                left: -345px;
+            }
+
+            &::after {
+                width: 448px;
+                height: 469px;;
+            }
         }
     }
 
@@ -1048,6 +1257,18 @@
     .contact-us {
         padding-bottom: 500px;
         padding-top: 150px;
+
+        &__bg-dec {
+            &::before {
+                top: 59px;
+                left: -345px;
+            }
+
+            &::after {
+                width: 448px;
+                height: 469px;;
+            }
+        }
     }
 
     .guide-article  {
@@ -1360,6 +1581,17 @@
                     margin-top: 60px;
                 }
             }
+
+            .header__offer {
+                margin-bottom: 30px;
+            }
+
+            .header__img {
+                width: 335px;
+                height: 259px;
+                right: 25px;
+                bottom: 90px;
+            }
         }
 
         &_lfd {
@@ -1442,6 +1674,16 @@
             height: 217px;
             margin-bottom: 30px;
         }
+
+        &__bg-dec {
+            &::before {
+                left: -678px;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
     }
 
     .design {
@@ -1455,6 +1697,16 @@
 
         &__quote blockquote {
             font-size: 16px;
+        }
+
+        &__bg-dec {
+            &::before {
+                left: -678px;
+            }
+
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -1507,6 +1759,17 @@
 
         &__content {
             font-size: 18px;
+        }
+
+        &__bg-dec {
+            &::before {
+                left: -385px;
+            }
+
+            &::after {
+                right: -108px;
+                top: 0px;
+            }
         }
     }
 
