@@ -40,5 +40,15 @@ $( document ).ready(function() {
     $this.next().slideToggle();
       
   });
+
+  function faqBtnMore(btn) {
+    $(btn).on('click', function(evt) {
+      evt.preventDefault();
+      $(this).parent().find('.hidden').removeClass('hidden');
+      $(this).fadeOut();
+    });
+  };
+  faqBtnMore('.js-btn-more');
+
   
 });

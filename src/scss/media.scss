@@ -873,6 +873,12 @@
             }
         }
     }
+
+    .blog-list {
+        &__card-content {
+            min-height: 390px;
+        }
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1775,12 +1781,8 @@
     }
 
     .blog-list {
-        &__card-img {
-            max-height: 390px;
-
-            img {
-                max-height: 390px;
-            }
+        &__card-content {
+            min-height: 390px;
         }
     }
 
@@ -1990,18 +1992,12 @@
     }
 
     .blog-list {
-        &__card-img {
-            max-height: 320px;
-
-            img {
-                max-height: 320px;
-            }
-        }
 
         &__card-content {
             color: #ffffff;
             line-height: 130%;
             font-size: 14px;
+            min-height: 320px;
 
             .blog-list__card-title {
                 display: block;
@@ -2317,6 +2313,10 @@
             margin-bottom: 35px;
         }
 
+        &__main {
+            width: 100%;
+        }
+
         &__bg-dec {
             &::after {
                 right: -68px;
@@ -2420,19 +2420,6 @@
     }
 
     .blog-list {
-        &__card-img {
-            max-height: unset;
-            position: absolute;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: unset;
-
-            img {
-                max-height: unset;
-                height: 100%;
-            }
-        }
 
         &__card {
             margin-bottom: 30px;
