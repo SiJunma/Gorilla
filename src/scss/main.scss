@@ -1,6 +1,10 @@
 @import 'bootstrap-grid-reboot.min', 'splide-core.min', 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-size: 16px;
     color: #5C5D62;
@@ -317,6 +321,12 @@ h6 {
             line-height: normal;
             @include no-mb();
 
+            p {
+                margin-bottom: 0;
+
+                @include text-overflow(3);
+            }
+
             .blog-list__card-title {
                 display: block;
                 color: #fff;
@@ -337,6 +347,8 @@ h6 {
 
             h4 {
                 color: #fff;
+
+                @include text-overflow(2);
             }
 
             small {
@@ -1999,9 +2011,15 @@ h6 {
             position: absolute;
             font-weight: 600;
             letter-spacing: 0.005em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline;
+            line-height: 190%;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 52px;
+            max-width: 82%;
+            padding: 0 5px;
         }
 
         img {
@@ -2016,6 +2034,11 @@ h6 {
 
     &__card-content {
         @include no-mb();
+
+        p {
+            margin-bottom: 0;
+            @include text-overflow(3);
+        }
     }
 
     &__main {
@@ -2105,6 +2128,12 @@ h6 {
             
             h5 {
                 color: #111111;
+
+                @include text-overflow(2);
+            }
+
+            p {
+               margin-bottom: 0;
             }
         }
 

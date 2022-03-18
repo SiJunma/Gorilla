@@ -27,3 +27,18 @@
   background-repeat: no-repeat;
   flex-shrink: 0;
 }
+
+@mixin text-overflow($lines: 1) {
+  overflow: hidden;
+  display: box;
+  display: -webkit-box;
+  line-clamp: $lines;
+  -ms-line-clamp: $lines;
+  -webkit-line-clamp: $lines;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
