@@ -1870,11 +1870,19 @@ h6 {
                 @include no-mb();
                 color: #5C5D62;
                 margin-top: 50px;
+                position: relative;
+                z-index: 1;
                 
                 h5 {
                  color: #08193A;
                  margin-bottom: 23px;
                  max-width: 576px;
+                }
+
+                .btn {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
                 }
             }
 
@@ -2964,6 +2972,14 @@ textarea.form-control {
         h6 {
             margin-bottom: 9px;
             margin-top: 25px;
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 
