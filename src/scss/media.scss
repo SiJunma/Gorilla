@@ -204,6 +204,14 @@
        }
     }
 
+    .msg-form {
+        &__card {
+            h5 {
+                font-size: 42px;
+            }
+        }
+    }
+
     .design-page {
         padding-bottom: 500px;
     }
@@ -245,6 +253,10 @@
   
       &__card-box {
         max-width: 670px;
+
+        .card {
+            padding: 32px 27px;
+          }
       }
     }
   
@@ -776,6 +788,12 @@
                 height: 320px;
             }
         }
+
+        &__card {
+            h5 {
+                font-size: 50px;
+            }
+        }
     }
 
     .assurance {
@@ -828,7 +846,7 @@
         }
 
         &_blue {
-            padding-top: 250px;
+            padding-top: 290px;
 
             .faq__bg-dec {
                 &::before {
@@ -1492,6 +1510,8 @@
         padding-top: 125px;
 
         &_blue {
+            padding-top: 275px;
+            
             .faq__bg-dec {
                 &::before {
                     left: -10px;
@@ -1922,7 +1942,7 @@
         }
 
         &_blue {
-            padding-top: 220px;
+            padding-top: 250px;
         }
 
         .faq__wrapper .btn-round {
@@ -1946,6 +1966,14 @@
             h4 {
                 font-size: 30px;
                 max-width: 460px;
+            }
+        }
+    }
+
+    .msg-form {
+        &__card {
+            h5 {
+                font-size: 40px;
             }
         }
     }
@@ -2304,7 +2332,7 @@
 
     .faq {
         &_blue {
-            padding-top: 220px;
+            padding-top: 260px;
 
             .faq__bg-dec::after {
                 right: -20px;
@@ -2754,6 +2782,10 @@
         &__card {
             padding: 36px 25px 30px;
             border-radius: 20px;
+
+            h5 {
+                font-size: 33px;
+            }
         } 
     }
 

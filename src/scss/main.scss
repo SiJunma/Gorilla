@@ -80,6 +80,20 @@ h6 {
             position: relative;
             margin-bottom: 50px;
 
+            img {
+                margin-bottom: 26px;
+                margin-left: 50px;
+            }
+
+            figure {
+                margin-bottom: 26px;
+                margin-left: 50px;
+
+                img {
+                    margin: 0;
+                }
+            }
+
             &::after {
                 @include svg(100%, 1px);
                 background: linear-gradient(90deg, #B0BDD0 0%, rgba(176, 189, 208, 0) 100.05%);
@@ -374,6 +388,11 @@ h6 {
         &:first-child {
             margin-top: 0;
         }
+    }
+
+    h4,h3,h6,h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     @include no-mb();
@@ -1077,6 +1096,12 @@ h6 {
         }
     }
 
+    &_seo {
+        .header__offer {
+            margin-bottom: 30px;
+        }
+    }
+
     &_lf-web-design {
         min-height: 810px;
 
@@ -1402,6 +1427,16 @@ h6 {
        }
     }
 
+    h2,h3,h4 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        & + img.article-img,
+        & + figure {
+            margin-top: 20px;
+        }
+    }
+
     h6 {
         color: #021233;
         max-width: 680px;
@@ -1436,7 +1471,7 @@ h6 {
         border-radius: 20px;
         width: 100%;
         height: auto;
-        max-height: 450px;
+        max-height: 500px;
         object-fit: cover;
 
         &:first-child {
@@ -1495,7 +1530,7 @@ h6 {
     }
 
     &__wrapper {
-        max-width: 940px;
+        // max-width: 940px;
         margin-left: auto;
         margin-right: auto;
         @include no-mb();
@@ -1538,6 +1573,8 @@ h6 {
     .title {
         h3 {
             font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
             color: #08193A;
         }
     }
@@ -1803,7 +1840,6 @@ h6 {
 
     .title {
         text-align: left;
-        margin-bottom: 74px;
 
         h2 {
             color: #08193A;
@@ -2045,7 +2081,12 @@ h6 {
 
         p {
             margin-bottom: 0;
-            @include text-overflow(3);
+            // @include text-overflow(3);
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
         }
     }
 
@@ -2678,6 +2719,11 @@ textarea.form-control {
         h5 {
             color: #111111;
             margin-bottom: 13px;
+            font-size: 48px;
+            line-height: 110%;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue',cursive;
+            font-weight: 500;
         }
 
         color: #5C5D62;
@@ -2976,6 +3022,7 @@ textarea.form-control {
 
         a {
             color: #fff;
+            text-decoration: underline;
 
             &:hover {
                 color: #fff;
@@ -3074,7 +3121,7 @@ textarea.form-control {
     &_blue {
         margin-top: -220px;
         color: #fff;
-        padding-top: 280px;
+        padding-top: 310px;
         padding-bottom: 100px;
 
         .custom-accordion__btn {
